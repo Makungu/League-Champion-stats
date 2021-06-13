@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using leagueChampionStats.Models;
 
+
 namespace leagueChampionStats.Controllers
 {
     public class AddChampionController: Controller
@@ -16,6 +17,14 @@ namespace leagueChampionStats.Controllers
 
         }
 
+        public IActionResult Submit(string name, string role, string type, string region)
+        {
+            ViewData["Name"] = name;
+            ViewData["Role"] = role;
+            ViewData["Type"] = type;
+            ViewData["Region"] = region;
+            return View("AddChampion");
+        }
         public IActionResult AddChampion()
         {
             return View();

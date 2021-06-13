@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SQLiteConfig
+namespace SQLiteChampions
 {
     public class SQLiteConfiguration :DbConfiguration
     {
