@@ -1,11 +1,11 @@
-@model leagueChampionStats.DataAccessLayer.championsContext
+@model leagueChampionStats.DataAccessLayer.championContext
 @{
     ViewData["Title"] = "Champions";
 }
 
 <div>
-   <!-- @foreach ( var champion in Model.champions)
+   @foreach ( var champion in Model.champions)
     {
-        //do some html magic 
-    } -->
+       <p> @champion.name </p> 
+    } 
 </div>

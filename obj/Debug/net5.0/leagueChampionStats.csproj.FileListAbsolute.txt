@@ -420,5 +420,5 @@ C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\tr\Microso
 C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\makun\Documents\01\WORK\leagueChampionStats\obj\Debug\net5.0\leagueChampionStats.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\app.config
-C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\leagueChampionStats.dll.config
+C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\Humanizer.dll
+C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

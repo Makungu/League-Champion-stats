@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using leagueChampionStats.DataAccessLayer;
 using leagueChampionStats.Models;
 
 
@@ -19,10 +16,16 @@ namespace leagueChampionStats.Controllers
 
         public IActionResult Submit(string name, string role, string type, string region)
         {
-            ViewData["Name"] = name;
-            ViewData["Role"] = role;
-            ViewData["Type"] = type;
-            ViewData["Region"] = region;
+            championContext context = new championContext();
+            champion champ = new champion()
+            {
+                name = name,
+                role = role,
+                type = type,
+                region = region
+            };
+            context.champions.Add(champ);
+            context.SaveChanges();
             return View("AddChampion");
         }
         public IActionResult AddChampion()
