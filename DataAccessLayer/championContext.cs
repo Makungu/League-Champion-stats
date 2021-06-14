@@ -14,7 +14,7 @@ namespace leagueChampionStats.DataAccessLayer
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source = Champions.db");
+            optionsBuilder.UseSqlite("Data Source = Champions.db");
         }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -9,6 +9,7 @@ namespace leagueChampionStats.Controllers
 {
     public class AddChampionController: Controller
     {
+        
         public AddChampionController()
         {
 

@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using leagueChampionStats.DataAccessLayer;
 using leagueChampionStats.Models;
 
 namespace leagueChampionStats.Controllers
@@ -17,7 +13,9 @@ namespace leagueChampionStats.Controllers
 
         public IActionResult Champions()
         {
-            return View();
+            championContext context = new championContext();
+           
+            return View(context);
         }
 
          [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
