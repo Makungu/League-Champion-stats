@@ -1,4 +1,4 @@
-@model leagueChampionStats.Controllers.ChampionsController;
+@model IEnumerable<leagueChampionStats.Models.champion>
 @{
     ViewData["Title"] = "Champions";
 }
@@ -6,15 +6,17 @@
 
 <div class = "container">
     <br>
-    <form class="form-inline" method="POST">
-        <div class="form-group row">
-            <div class="col-xs-2">
-                @Html.TextBox("Search")
-                <input  type = "submit" value = "Search"> 
-            </div> 
-        </div>
-    </form><br>
+    @using(Html.BeginForm("Submit", "Champions", FormMethod.Post)){
+        
+        <form method = "post">
+            @Html.TextBox("Search") 
+            <input  type = "submit" value = "submit"> 
+        </form>
+
+    }
+    <br>
     
+ 
     <div class="row">
         <table style = "width: 100%" class = "table table-bordered">
             <tr>
@@ -24,7 +26,7 @@
                 <th> Region </th>
             </tr>    
             
-            @foreach (var champion in Model.champs)
+            @foreach (var champion in Model)
             {   
                 <tr>
                     <td>@champion.name</td>

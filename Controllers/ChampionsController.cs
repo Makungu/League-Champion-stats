@@ -3,32 +3,38 @@ using Microsoft.AspNetCore.Mvc;
 using leagueChampionStats.DataAccessLayer;
 using leagueChampionStats.Models;
 using System.Collections.Generic;
+using System;
 
 namespace leagueChampionStats.Controllers
 {
     public class ChampionsController:Controller
     {
-        public championContext context = new championContext();
-        public List<champion> champs = new List<champion>{};
+        championContext context = new championContext();
+        List<champion> champs = new List<champion>();
+
         public ChampionsController ()
         {
         }
         public IActionResult Submit(string search)
         {
-             
+            Console.WriteLine(search);
             foreach(champion c in context.champions){
-                if (c.type == search){
+                if (c.type == search)
+                {
                     champs.Add(c);
                 }
+                
             }
-            return View(champs);
+            return View("Champions", champs);
         }
+
         public IActionResult Champions()
-        {
+        {  
+            champs.Clear();
             foreach(champion c in context.champions){
-                champs.Add(c);
+                champs.Add(c);                
             }
-            return View(champs);
+            return View("Champions", champs);
         }
 
          [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

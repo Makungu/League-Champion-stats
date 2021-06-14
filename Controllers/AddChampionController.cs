@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using leagueChampionStats.DataAccessLayer;
 using leagueChampionStats.Models;
+using System;
 
 
 namespace leagueChampionStats.Controllers
