@@ -1,13 +1,41 @@
-@model leagueChampionStats.DataAccessLayer.championContext
+@model leagueChampionStats.Controllers.ChampionsController;
 @{
     ViewData["Title"] = "Champions";
 }
 
-<div>
-    @foreach (var champion in Model.champions)
-    {
-        <p> @champion.name </p>
-    }
+
+<div class = "container">
+    <br>
+    <form class="form-inline" method="POST">
+        <div class="form-group row">
+            <div class="col-xs-2">
+                @Html.TextBox("Search")
+                <input  type = "submit" value = "Search"> 
+            </div> 
+        </div>
+    </form><br>
     
-  
+    <div class="row">
+        <table style = "width: 100%" class = "table table-bordered">
+            <tr>
+                <th> Name </th>
+                <th> Role </th>
+                <th> Class </th>
+                <th> Region </th>
+            </tr>    
+            
+            @foreach (var champion in Model.champs)
+            {   
+                <tr>
+                    <td>@champion.name</td>
+                    <td>@champion.role</td>
+                    <td>@champion.type</td>
+                    <td>@champion.region</td>  
+                </tr>
+            }
+                  
+        </table>
+    </div>
+            
 </div>
+     

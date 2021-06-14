@@ -466,5 +466,4 @@ C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\zh-Hans\Mi
 C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\App.config
-C:\Users\makun\Documents\01\WORK\leagueChampionStats\bin\Debug\net5.0\leagueChampionStats.dll.config
+C:\Users\makun\Documents\01\WORK\leagueChampionStats\obj\Debug\net5.0\Razor\Views\Classes\Classes.cshtml.g.cs
