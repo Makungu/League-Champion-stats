@@ -9,13 +9,43 @@
         
         <form method = "post">
             <label for = "Name" class = "formLabel"> Champion name: </label>
-            @Html.TextBox("Name") <br>
+            <input type = "text" asp-for = "name" placeholder="Enter a Champions name">
+            <span asp-validation-for = "name" class = "text-danger"></span><br>
             <label for = "Role" class = "formLabel"> Suggested role: </label>
-            @Html.TextBox("Role") <br>
+            <select asp-for = "role">
+                <option value="Top Lane">Top Lane</option>
+                <option value="Mid Lane">Mid Lane</option>
+                <option value="Bot Lane">Bot Lane</option>
+                <option value="Support">Support</option>
+                <option value="Jungle">Jungle</option>
+                <span asp-validation-for = "role" class = "text-danger"></span>
+            </select><br>
             <label for = "Type" class = "formLabel"> Champion class: </label>
-            @Html.TextBox("Type") <br>
+            <select asp-for = "type">
+                <option value="Bruiser">Bruiser</option>
+                <option value="Tank">Tank</option>
+                <option value="Assassin">Assassin</option>
+                <option value="Mage">Mage</option>
+                <option value="Enchanter">Enchanter</option>
+                <option value="ADC">ADC</option>
+                <span asp-validation-for = "type" class = "text-danger"></span>
+            </select><br>
             <label for = "Region" class = "formLabel"> Region of origin: </label>
-            @Html.TextBox("Region") <br>
+            <select asp-for = "Region">
+                <option value="Bandle City">Bandle City</option>
+                <option value="Bilgewater">Bilgewater</option>
+                <option value="Demacia">Demacia</option>
+                <option value="Freljord">Freljord</option>
+                <option value="Ionia">Ionia</option>
+                <option value="Ixtal">Ixtal</option>
+                <option value="Noxus">Noxus</option>
+                <option value="Piltover">Piltover</option>
+                <option value="Shadow Isles">Shadow Isles</option>
+                <option value="Shurima">Shurima</option>        
+                <option value="The Void"> The Void</option>
+                <option value="Zaun">Zaun</option>    
+                <span asp-validation-for = "region" class = "text-danger"></span>  
+            </select><br>
             <input  type = "submit" value = "submit"> 
         </form>
 
