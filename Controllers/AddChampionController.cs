@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using leagueChampionStats.DataAccessLayer;
 using leagueChampionStats.Models;
 using System;
-using System.ComponentModel.DataAnnotations;
 
 
 namespace leagueChampionStats.Controllers
@@ -16,16 +15,19 @@ namespace leagueChampionStats.Controllers
 
         }
 
-        public IActionResult Submit(champion champ)
+        public IActionResult Submit(string name, string role, string type, string region)
         {
-            if(ModelState.IsValid){
-                championContext context = new championContext();
-                context.champions.Add(champ);
-                context.SaveChanges();
-                
-            }
+            championContext context = new championContext();
+            champion champ = new champion()
+            {
+                name = name,
+                role = role,
+                type = type,
+                region = region
+            };
+            context.champions.Add(champ);
+            context.SaveChanges();
             return View("AddChampion");
-            
         }
         public IActionResult AddChampion()
         {

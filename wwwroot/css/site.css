@@ -78,26 +78,11 @@ body {
 }
 
 .formLabel{
+  width: 150px;
   padding-left : 10px;
   padding-right : 10px;
   padding-bottom: 20px;
   text-align: left;
 }
 
-.champImage{
-  border-radius: 25px;
-}
-
-
-.mycol{
-  display: inline-block;
-  width : 200px;
-  height: 400px;
-  padding: 0px 20px 20px 20px;
-  border: 3px solid black;
-}
-
-.champName{
-  font-size: 30px;
-}
 

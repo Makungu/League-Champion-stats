@@ -3,49 +3,78 @@
 }
 
 
-<div class = "championForm">
-    <h1>Add a new Champion</h1>
+<div class = "container text-centre">
+    <br><h1>Add a new Champion</h1><br>
     @using(Html.BeginForm("Submit", "AddChampion", FormMethod.Post)){
         
         <form method = "post">
-            <label for = "Name" class = "formLabel"> Champion name: </label>
-            <input type = "text" asp-for = "name" placeholder="Enter a Champions name">
-            <span asp-validation-for = "name" class = "text-danger"></span><br>
-            <label for = "Role" class = "formLabel"> Suggested role: </label>
-            <select asp-for = "role">
-                <option value="Top Lane">Top Lane</option>
-                <option value="Mid Lane">Mid Lane</option>
-                <option value="Bot Lane">Bot Lane</option>
-                <option value="Support">Support</option>
-                <option value="Jungle">Jungle</option>
-                <span asp-validation-for = "role" class = "text-danger"></span>
-            </select><br>
-            <label for = "Type" class = "formLabel"> Champion class: </label>
-            <select asp-for = "type">
-                <option value="Bruiser">Bruiser</option>
-                <option value="Tank">Tank</option>
-                <option value="Assassin">Assassin</option>
-                <option value="Mage">Mage</option>
-                <option value="Enchanter">Enchanter</option>
-                <option value="ADC">ADC</option>
-                <span asp-validation-for = "type" class = "text-danger"></span>
-            </select><br>
-            <label for = "Region" class = "formLabel"> Region of origin: </label>
-            <select asp-for = "Region">
-                <option value="Bandle City">Bandle City</option>
-                <option value="Bilgewater">Bilgewater</option>
-                <option value="Demacia">Demacia</option>
-                <option value="Freljord">Freljord</option>
-                <option value="Ionia">Ionia</option>
-                <option value="Ixtal">Ixtal</option>
-                <option value="Noxus">Noxus</option>
-                <option value="Piltover">Piltover</option>
-                <option value="Shadow Isles">Shadow Isles</option>
-                <option value="Shurima">Shurima</option>        
-                <option value="The Void"> The Void</option>
-                <option value="Zaun">Zaun</option>    
-                <span asp-validation-for = "region" class = "text-danger"></span>  
-            </select><br>
+            <div class="row">
+                <div class="col-sm-2">
+                     <label for = "Name" class = "formLabel"> Champion name: </label>
+                </div>
+                <div class="col-sm-4">
+                    <input type = "text" name = "name" placeholder="Enter a Champions name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for = "Name" class = "formLabel"> Champion name: </label>
+                </div>
+                <div class="col-sm-4">
+                    <input type = "text" name = "name" placeholder="Enter a Champions name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                   <label for = "Role" class = "formLabel"> Suggested role: </label>   
+                </div>
+                <div class="col-sm-4">
+                    <select name = "role">
+                        <option value="Top Lane">Top Lane</option>
+                        <option value="Mid Lane">Mid Lane</option>
+                        <option value="Bot Lane">Bot Lane</option>
+                        <option value="Support">Support</option>
+                        <option value="Jungle">Jungle</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for = "Type" class = "formLabel"> Champion class: </label>
+                </div>
+                <div class="col-sm-4">
+                    <select name="type">
+                        <option value="Bruiser">Bruiser</option>
+                        <option value="Tank">Tank</option>
+                        <option value="Assassin">Assassin</option>
+                        <option value="Mage">Mage</option>
+                        <option value="Enchanter">Enchanter</option>
+                        <option value="ADC">ADC</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for = "Region" class = "formLabel"> Region of origin: </label>
+                </div>
+                <div class="col-sm-4">
+                    <select name = "region">
+                        <option value="Bandle City">Bandle City</option>
+                        <option value="Bilgewater">Bilgewater</option>
+                        <option value="Demacia">Demacia</option>
+                        <option value="Freljord">Freljord</option>
+                        <option value="Ionia">Ionia</option>
+                        <option value="Ixtal">Ixtal</option>
+                        <option value="Noxus">Noxus</option>
+                        <option value="Piltover">Piltover</option>
+                        <option value="Shadow Isles">Shadow Isles</option>
+                        <option value="Shurima">Shurima</option>        
+                        <option value="The Void"> The Void</option>
+                        <option value="Zaun">Zaun</option>      
+                    </select>
+                </div>
+            </div>   
+            <br>
             <input  type = "submit" value = "submit"> 
         </form>
 

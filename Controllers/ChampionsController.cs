@@ -17,7 +17,7 @@ namespace leagueChampionStats.Controllers
         }
         public IActionResult Submit(string search)
         {
-            Console.WriteLine(search);
+            champs.Clear();
             foreach(champion c in context.champions){
                 if (c.type == search)
                 {

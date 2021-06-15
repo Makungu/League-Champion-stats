@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\makun\\Documents\\01\\WORK\\leagueChampionStats\\leagueChampionStats.csproj": {}
+    "C:\\Users\\Makungu Chansa\\Documents\\Takehome\\League-Champion-stats\\leagueChampionStats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\makun\\Documents\\01\\WORK\\leagueChampionStats\\leagueChampionStats.csproj": {
+    "C:\\Users\\Makungu Chansa\\Documents\\Takehome\\League-Champion-stats\\leagueChampionStats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\makun\\Documents\\01\\WORK\\leagueChampionStats\\leagueChampionStats.csproj",
+        "projectUniqueName": "C:\\Users\\Makungu Chansa\\Documents\\Takehome\\League-Champion-stats\\leagueChampionStats.csproj",
         "projectName": "leagueChampionStats",
-        "projectPath": "C:\\Users\\makun\\Documents\\01\\WORK\\leagueChampionStats\\leagueChampionStats.csproj",
-        "packagesPath": "C:\\Users\\makun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\makun\\Documents\\01\\WORK\\leagueChampionStats\\obj\\",
+        "projectPath": "C:\\Users\\Makungu Chansa\\Documents\\Takehome\\League-Champion-stats\\leagueChampionStats.csproj",
+        "packagesPath": "C:\\Users\\Makungu Chansa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Makungu Chansa\\Documents\\Takehome\\League-Champion-stats\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\makun\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Makungu Chansa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -91,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
