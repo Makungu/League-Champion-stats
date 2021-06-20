@@ -22,10 +22,17 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="Classes" asp-action="Classes">Classes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Champions" asp-action="Champions">Champions</a>
+                            <a class="nav-link text-white"  asp-area="" asp-controller="Champions" asp-action="Champions">Champions</a>
+                            
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="AddChampion" asp-action="AddChampion">Add a champion</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" data-toggle = "dropdown" >Champion managment
+                            <span class = "caret"></span></a>
+                            <ul class = "dropdown-menu">
+                                <li> <a class="nav-link text-dark" asp-area="" asp-controller="AddChampion" asp-action="AddChampion">Add Champion</a></li>
+                                <li> <a class="nav-link text-dark" asp-area="" asp-controller="AddChampion" asp-action="AddChampion">Remove Champion</a></li>
+                                <li> <a class="nav-link text-dark" asp-area="" asp-controller="AddChampion" asp-action="AddChampion">Edit Champion</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

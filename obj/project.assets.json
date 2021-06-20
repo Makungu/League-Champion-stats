@@ -8151,11 +8151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Makungu Chansa\\Documents\\Takehome\\League-Champion-stats\\leagueChampionStats.csproj",
+      "projectUniqueName": "C:\\Users\\Makungu Chansa\\Documents\\Old\\Takehome\\League-Champion-stats\\leagueChampionStats.csproj",
       "projectName": "leagueChampionStats",
-      "projectPath": "C:\\Users\\Makungu Chansa\\Documents\\Takehome\\League-Champion-stats\\leagueChampionStats.csproj",
+      "projectPath": "C:\\Users\\Makungu Chansa\\Documents\\Old\\Takehome\\League-Champion-stats\\leagueChampionStats.csproj",
       "packagesPath": "C:\\Users\\Makungu Chansa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Makungu Chansa\\Documents\\Takehome\\League-Champion-stats\\obj\\",
+      "outputPath": "C:\\Users\\Makungu Chansa\\Documents\\Old\\Takehome\\League-Champion-stats\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
