@@ -7,17 +7,17 @@ using System;
 
 namespace leagueChampionStats.Controllers
 {
-    public class AddChampionController: Controller
+    public class ManageChampionsController: Controller
     {
-        
-        public AddChampionController()
+        championContext context = new championContext();
+        public ManageChampionsController()
         {
 
         }
 
-        public IActionResult Submit(string name, string role, string type, string region)
+        public IActionResult SubmitAdd(string name, string role, string type, string region)
         {
-            championContext context = new championContext();
+            
             champion champ = new champion()
             {
                 name = name,
@@ -29,9 +29,35 @@ namespace leagueChampionStats.Controllers
             context.SaveChanges();
             return View("AddChampion");
         }
+
+        public IActionResult submitEdit()
+        {
+            foreach (champion c in context.champions)
+            {
+                
+            }
+            return View("EditChampion");
+        }
+
+        public IActionResult submitRemove()
+        {
+            return View("RemoveChampion");
+        }
+
         public IActionResult AddChampion()
         {
-            return View();
+            return View("AddChampion");
+        }
+
+        public IActionResult EditChampion()
+        {
+            
+            return View("EditChampion");
+        }
+
+        public IActionResult RemoveChampion()
+        {
+            return View("RemoveChampion");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

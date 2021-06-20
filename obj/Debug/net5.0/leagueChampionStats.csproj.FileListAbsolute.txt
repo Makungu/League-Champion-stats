@@ -1387,7 +1387,6 @@ C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\n
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\leagueChampionStats.TagHelpers.input.cache
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\leagueChampionStats.TagHelpers.output.cache
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\leagueChampionStats.RazorCoreGenerate.cache
-C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\Razor\Views\AddChampion\AddChampion.cshtml.g.cs
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\Razor\Views\Champions\Champions.cshtml.g.cs
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\Razor\Views\Classes\Classes.cshtml.g.cs
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
@@ -1405,3 +1404,6 @@ C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\n
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\ref\leagueChampionStats.dll
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\leagueChampionStats.pdb
 C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\leagueChampionStats.genruntimeconfig.cache
+C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\Razor\Views\ManageChampions\AddChampion.cshtml.g.cs
+C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\Razor\Views\ManageChampions\EditChampion.cshtml.g.cs
+C:\Users\Makungu Chansa\Documents\Old\Takehome\League-Champion-stats\obj\Debug\net5.0\Razor\Views\ManageChampions\RemoveChampion.cshtml.g.cs

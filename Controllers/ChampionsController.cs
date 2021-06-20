@@ -19,7 +19,7 @@ namespace leagueChampionStats.Controllers
         {
             champs.Clear();
             foreach(champion c in context.champions){
-                if (c.type == search)
+                if (c.type == search || c.name == search || c.role == search || c.region == search)
                 {
                     champs.Add(c);
                 }

@@ -9,7 +9,7 @@
     @using(Html.BeginForm("Submit", "Champions", FormMethod.Post)){
         
         <form method = "post">
-            <label for = "Search" class = "formLabel" style="font-weight: bold;"> Search by class: </label>
+            <label for = "Search" class = "formLabel" style="font-weight: bold;"> Filter: </label>
             @Html.TextBox("Search") 
             <input  type = "submit" value = "submit"> 
         </form>

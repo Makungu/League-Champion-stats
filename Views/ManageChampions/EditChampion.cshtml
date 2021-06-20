@@ -1,11 +1,11 @@
 @{
-    ViewData["Title"] = "Add Champion";
+    ViewData["Title"] = "Edit Champion";
 }
 
 
 <div class = "container text-centre">
-    <br><h1>Add a new Champion</h1><br>
-    @using(Html.BeginForm("Submit", "AddChampion", FormMethod.Post)){
+    <br><h1>Edit a Champion</h1><br>
+    @using(Html.BeginForm("SubmitEdit", "EditChampion", FormMethod.Post)){
         
         <form method = "post">
             <div class="row">
@@ -67,9 +67,7 @@
                 </div>
             </div>   
             <br>
-            <input  type = "submit" value = "submit"> 
+            <input  type = "submit" value = "Edit"> 
         </form>
 
     }
-
-</div>
